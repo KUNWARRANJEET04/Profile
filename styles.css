@@ -42,8 +42,9 @@ h2 {
 }
 .profile-img {
   width: 800px;
-  height: 300px;
-  border-radius: 50%;
+  max-width: 230px;
+  height: auto;
+  border-radius: 10%;
   margin: 20px auto;
   display: block;
   object-fit: cover;
