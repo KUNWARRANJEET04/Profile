@@ -46,7 +46,7 @@ h2 {
   border-radius: 50%;
   margin: 20px auto;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
 }
 .section {
   background-color: var(--section-bg);
@@ -127,6 +127,38 @@ a:hover {
 }
 .personal-info i {
   margin-right: 5px;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .profile-img {
+    max-width: 200px; /* Smaller image on smaller screens */
+  }
+
+  .project {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .skills, .projects {
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center;
+  }
+
+  .profile-img {
+    max-width: 150px;
+  }
 }
 .theme-switch-wrapper {
   position: absolute;
